@@ -68,35 +68,7 @@ Everything runs directly in the browser using WebGL.
 
 ---
 
-# 📦 Installation
 
-```bash
-git clone https://github.com/ludens-stdios/3polis.git
-
-cd 3polis
-
-npm install
-
-npm run dev
-```
-
----
-
-# 🗂️ Project Structure
-
-```text
-src/
-│
-├── core/
-├── world/
-├── simulation/
-├── rendering/
-├── ui/
-├── assets/
-└── main.ts
-```
-
----
 
 # 🎯 Vision
 
