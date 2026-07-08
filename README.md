@@ -6,7 +6,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Three.js-3D-black?style=for-the-badge&logo=threedotjs" />
-  <img src="logo-javascript-blue?style=for-the-badge&logo=javascript&logoColor=white" />
+  <img src="https://img.shields.io/badge/javascript-blue?style=for-the-badge&logo=javascript&logoColor=black&labelColor=%23F7DF1E" />
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
   <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
 </p>
