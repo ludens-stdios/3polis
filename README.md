@@ -101,7 +101,34 @@ You can find it here:
 
 Huge thanks to **dgreenheck** for making the project open source.
 
+
+<!--# 📦 Installation
+
+```bash
+git clone https://github.com/ludens-stdios/3polis.git
+
+cd 3polis
+
+npm install
+
+npm run dev
+```
+
 ---
+
+# 🗂️ Project Structure
+
+```text
+src/
+│
+├── core/
+├── world/
+├── simulation/
+├── rendering/
+├── ui/
+├── assets/
+└── main.ts
+```
 
 # 🤝 Contributing
 
@@ -112,7 +139,7 @@ If you'd like to contribute:
 1. Fork the repository
 2. Create a feature branch
 3. Commit your changes
-4. Open a Pull Request
+4. Open a Pull Request-->
 
 ---
 
