@@ -3,7 +3,7 @@ export default {
   base: "/3polis/",
 
   // Set the project root directory (relative to the config file)
-  root: "./src",
+  root: ".",
 
   // Set the directory to serve static files from (relative to the root)
   publicDir: "./public",
@@ -11,5 +11,15 @@ export default {
   // Set the build output directory
   build: {
     outDir: "./dist",
+    chunkSizeWarningLimit: 1000, // KB
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            return "vendor";
+          }
+        },
+      },
+    },
   },
 };
