@@ -1,9 +1,9 @@
 export default {
   // Set the base directory for GitHub pages
-  base: "/3polis/",
+  base: ".",
 
   // Set the project root directory (relative to the config file)
-  root: ".",
+  root: "./src",
 
   // Set the directory to serve static files from (relative to the root)
   publicDir: "./public",
