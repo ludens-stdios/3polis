@@ -25,8 +25,8 @@ export default {
   },
   vehicle: {
     speed: 0.0005,
-    fadeTime: 500,
-    maxLifeTime: 10000,
-    spawnInterval: 1000,
+    fadeTime: 500, // ms
+    maxLifeTime: 10000, // ms
+    spawnInterval: 1000, // ms
   },
 };

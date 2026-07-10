@@ -5,6 +5,7 @@ import { Tile } from "./tile.js";
 import { VehicleGraph } from "./vehicles/vehicleGraph.js";
 import { PowerService } from "./services/power.js";
 import { SimService } from "./services/simService.js";
+import { spanishTownNames } from "../data/city-data.js";
 
 export class City extends THREE.Group {
   /**
@@ -43,10 +44,10 @@ export class City extends THREE.Group {
    */
   vehicleGraph;
 
-  constructor(size, name = "Potes") {
+  constructor(size, name = "3polis") {
     super();
 
-    this.name = name;
+    this.name = this.generateCityName();
     this.size = size;
 
     this.add(this.debugMeshes);
@@ -249,5 +250,16 @@ export class City extends THREE.Group {
     }
 
     return neighbors;
+  }
+
+  /**
+   * Selects from an array a random city name
+   * TODO: Change town name by country selected on start
+   * @returns {string} City name
+   */
+  generateCityName() {
+    const cityName =
+      spanishTownNames[Math.floor(Math.random() * spanishTownNames.length)];
+    return `${cityName}`;
   }
 }

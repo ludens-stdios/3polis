@@ -61,7 +61,7 @@ export class Game {
     window.assetManager = new AssetManager(() => {
       window.ui.hideLoadingText();
 
-      this.city = new City(16);
+      this.city = new City(8);
       this.initialize(this.city);
       this.start();
 
@@ -160,6 +160,7 @@ export class Game {
 
     window.ui.updateTitleBar(this);
     window.ui.updateInfoPanel(this.selectedObject);
+    this.updateBrowserTitle(`${this.city.name} - ${this.city.population}`);
   }
 
   /**
@@ -248,6 +249,13 @@ export class Game {
       window.ui.gameWindow.clientWidth,
       window.ui.gameWindow.clientHeight,
     );
+  }
+
+  /**
+   * Changes browser values dynamiclly
+   */
+  updateBrowserTitle(title) {
+    window.top.document.title = title;
   }
 }
 

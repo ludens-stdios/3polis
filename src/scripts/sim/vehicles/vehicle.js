@@ -74,7 +74,7 @@ export class Vehicle extends SimObject {
       return;
     }
 
-    if (this.age > config.vehicle.maxLifetime) {
+    if (this.age > config.vehicle.maxLifeTime) {
       this.dispose();
       return;
     }
@@ -101,11 +101,11 @@ export class Vehicle extends SimObject {
     if (this.age < config.vehicle.fadeTime) {
       setOpacity(this.age / config.vehicle.fadeTime);
     } else if (
-      config.vehicle.maxLifetime - this.age <
+      config.vehicle.maxLifeTime - this.age <
       config.vehicle.fadeTime
     ) {
       setOpacity(
-        (config.vehicle.maxLifetime - this.age) / config.vehicle.fadeTime,
+        (config.vehicle.maxLifeTime - this.age) / config.vehicle.fadeTime,
       );
     } else {
       setOpacity(1);
